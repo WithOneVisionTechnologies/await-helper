@@ -1,33 +1,23 @@
 # Is Helper
 
-This is a collection of static helpers that encapsulate basic "determining"
-functions that are run all the time in JavaScript. Some of these have at one
-point or another been in the Node engine itself but have moved in and out
-depending on versioning.
+This is a collection of static helpers that encapsulate anything to do with
+async-await.
 
-For example...this is quite common:
-
-```typescript
-if (value === undefined or value === null)
-```
-
-The is-helper provides the functionality:
+For example...the "execute" method is useful when dealing with an async call
+that has the tendency to swallow errors and the errors get lost in the promise
+chain:
 
 ```typescript
-import { IsHelper } from "@withonevision/is-helper"
-
-if (IsHelper.isNullOrUndefined(value))
+const value: string = await promiseMethod();
 ```
 
-The is-helper also adds functionality to certain things like:
+The await-helper provides the functionality:
 
 ```typescript
-import { IsHelper } from "@withonevision/is-helper"
+import AwaitHelper from "@withonevision/await-helper"
 
-if (IsHelper.isBoolean(value))
+const value: string = await AwaitHelper.execute<string>(promiseMethod());
 ```
 
-This will not only check if the value is boolean, but will also check if the
-value is a number equal to 0 for false or 1 for true. It will also check if the
-value is a string and equal to anything that would be considered "truthy"
-("Y/N", "true/false", etc.)
+This will convert the async-await into a promise in order to capture any
+potential errors thrown by the original method.
