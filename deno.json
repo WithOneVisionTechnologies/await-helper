@@ -1,0 +1,6 @@
+{
+  "name": "@withonevision/await-helper",
+  "version": "1.0.0",
+  "license": "MIT",
+  "exports": "./await-helper.ts"
+}
