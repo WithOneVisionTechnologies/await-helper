@@ -1,4 +1,4 @@
-# Is Helper
+# Await Helper
 
 This is a collection of static helpers that encapsulate anything to do with
 async-await.
