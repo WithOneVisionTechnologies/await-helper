@@ -6,8 +6,8 @@ export default defineConfig({
       coverage: {
          reporter: ["text", "html"],
          exclude: [
-            "node_modules/*",
-            "tests/**",
+            ...configDefaults.exclude,
+            "tests/*",
             "dist/*",
             "coverage/*",
             ".prettierrc.mjs",
