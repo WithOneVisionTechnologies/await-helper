@@ -1,6 +1,6 @@
 {
   "name": "@withonevision/await-helper",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "This is a collection of static helpers that encapsulate anything to do with async-await.",
   "homepage": "https://github.com/WithOneVisionTechnologies/await-helper",
   "license": "MIT",

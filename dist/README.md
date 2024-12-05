@@ -14,10 +14,12 @@ const value: string = await promiseMethod();
 The await-helper provides the functionality:
 
 ```typescript
-import AwaitHelper from "@withonevision/await-helper"
+import AwaitHelper from "@withonevision/await-helper";
 
 const value: string = await AwaitHelper.execute<string>(promiseMethod());
 ```
 
 This will convert the async-await into a promise in order to capture any
 potential errors thrown by the original method.
+
+For a full list of functions, see the [jsr.io documentation](https://jsr.io/@withonevision/await-helper/doc/~/AwaitHelper)

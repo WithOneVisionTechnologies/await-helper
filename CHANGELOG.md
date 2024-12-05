@@ -1,3 +1,10 @@
+## [1.0.1](https://github.com/WithOneVisionTechnologies/await-helper/compare/v1.0.0...v1.0.1) (2024-12-05)
+
+
+### Bug Fixes
+
+* **repo:** Updating docs link in readme ([9cf7796](https://github.com/WithOneVisionTechnologies/await-helper/commit/9cf7796ca2a47730b7d3ad58e8d567249cfb601a))
+
 # 1.0.0 (2024-12-05)
 
 
